@@ -1,0 +1,5 @@
+.app-aside{
+    flex-grow: 2;
+    border: 1px #ff9933 solid;
+    margin: 10px 0px;
+  }
