@@ -1,0 +1,56 @@
+.border {
+  border-style: solid;
+  margin: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.width-full {
+  width: auto;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.height-body {
+  min-height: 68vh;
+}
+
+.height-100px{
+    height: 100px;
+}
+
+.box {
+  margin: 5px;
+  width: 24%;
+  height: 100px;
+  background-color: cadetblue;
+}
+
+.box:hover{
+  background-color: burlywood;
+}
+
+.box p {
+  font-weight: 700;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.text-center {
+  justify-content: center;
+  align-items: center;
+}
