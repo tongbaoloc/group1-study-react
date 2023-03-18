@@ -1,0 +1,17 @@
+[
+    {
+       "title":"Log in",
+       "url":"/login",
+       "status":false
+    },
+    {
+        "title":"Log out",
+       "url":"/",
+       "status":true
+    },
+    {
+        "title":"Sign up",
+        "url":"/",
+        "status":false
+     }
+]
