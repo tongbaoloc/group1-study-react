@@ -1,0 +1,6 @@
+.boxesContainer {
+  border: 2px solid red;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+}

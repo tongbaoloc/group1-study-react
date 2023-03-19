@@ -1,0 +1,7 @@
+.aside {
+  text-align: center;
+  align-items: center;
+  flex: .3;
+  border: 2px solid red;
+  margin: 2px;
+}

@@ -1,0 +1,5 @@
+.contentLeft {
+  flex: .7;
+  border: 2px solid red;
+  margin: 2px;
+}
