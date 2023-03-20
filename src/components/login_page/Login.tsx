@@ -30,7 +30,7 @@ export default function Login() {
        }
     }
   return (
-    <div className="form">
+    <div className="form my-28">
       <div className="form__box">
         <div className="form__left">
           <div className="form__padding">
@@ -47,7 +47,7 @@ export default function Login() {
               <input className="form__email" type="text" placeholder="Email" onChange={(e) =>setUserName(e.target.value)} />
               <input
                 className="form__password"
-                type="text"
+                type="password"
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="******"
               />

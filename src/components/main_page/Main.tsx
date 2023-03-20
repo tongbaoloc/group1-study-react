@@ -16,11 +16,11 @@ export default function Main(props: Props) {
     <>
      <Header />
       {props.data && (
-        <div className="container m-auto py-4 flex justify-between h-80">
+        <div className="container m-auto py-8 flex justify-between min-h-fit  ">
           <div className="w-7/12 border-green-900 border-4 p-2">
             <Card />
           </div>
-          <div className="w-4/12 border-4 border-green-900 overflow-y-scroll">
+          <div className="w-4/12 border-4 border-green-900 overflow-y-scroll h-96  " style={{height:'30rem'}}>
             <p className="m-2 text-xl text-black under font-bold">List of Wine</p>
             {props.data.map((item: Wine) => {
               return <Item key={item.strDrink} wine={item} />;
