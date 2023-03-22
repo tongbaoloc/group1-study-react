@@ -28,7 +28,7 @@ function App() {
     loadData();
   }, []);
   return (
-    <div className="bg-emerald-100 w-screen text-white min-h-screen">
+    <div className="bg-emerald-100 w-screen text-white min-h-screen ">
       <Navbar />
       {/* <ToastContainer newestOnTop/> */}
       <Routes>
