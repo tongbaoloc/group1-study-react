@@ -1,9 +1,9 @@
-import './AsideRight.css'
+import './AsideRight.scss'
 
 export default function AsideRight() {
-    return (
-        <div className="aside-right">
-            Aside
-        </div>
-    )
+  return (
+    <div className="aside-right">
+      Aside
+    </div>
+  )
 }

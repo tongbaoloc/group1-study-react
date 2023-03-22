@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import Aside from './component/Aside/Aside'
 import Boxes from './component/Boxes/Boxes'
 import Footer from './component/Footer/Footer'

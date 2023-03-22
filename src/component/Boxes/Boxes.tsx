@@ -1,5 +1,5 @@
 import Box from './Box/Box'
-import './Boxes.css'
+import './Boxes.scss'
 
 function Boxes({ amount }: { amount: number }) {
   const _amount = amount;
