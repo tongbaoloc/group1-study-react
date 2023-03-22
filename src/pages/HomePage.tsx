@@ -1,7 +1,7 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import { HomePageBody } from "../components/HomePageBody";
-import { HomePageBox } from "../components/HomePageBox";
+import { Footer } from "../components/HomePage/Footer";
+import { Header } from "../components/HomePage/Header";
+import { HomePageBody } from "../components/HomePage/HomePageBody";
+import { HomePageBox } from "../components/HomePage/HomePageBox";
 
 type Props = {};
 
