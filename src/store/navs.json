@@ -4,8 +4,8 @@
        "url":"/"
     },
     {
-        "title":"Contact",
-       "url":"/"
+        "title":"Todo",
+       "url":"/todo"
     },
     {
         "title":"About us",
