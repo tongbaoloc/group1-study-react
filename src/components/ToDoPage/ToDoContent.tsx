@@ -17,7 +17,7 @@ export const TodoContent = (props: Props) => {
   const setToDoList = props.setToDoList;
 
   return (
-    <div className="mt-10 bg-slate-300 p-20">
+    <div className="mt-10 bg-slate-300 p-20 m-5 rounded-3xl">
       {toDoList.map((toDoItem) => {
         return (
           <TodoItem

@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+import { AddNewToDo } from "../components/ToDoPage/AddNewToDo";
 import { TodoContent } from "../components/ToDoPage/ToDoContent";
 import { ToDoHeader } from "../components/ToDoPage/ToDoHeader";
 
@@ -32,6 +34,7 @@ export const ToDoPage = (props: Props) => {
     <>
       <ToDoHeader />
       <TodoContent toDoList={toDoList} setToDoList={setToDoList} />
+      <AddNewToDo toDoList={toDoList} setToDoList={setToDoList} />
     </>
   );
 };
