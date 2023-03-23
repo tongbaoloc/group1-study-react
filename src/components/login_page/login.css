@@ -81,7 +81,7 @@
     margin: 10px 0;
   }
   
-  input {
+  .login-form input {
     display: block;
     width: 100%;
     margin-bottom: 25px;
@@ -93,15 +93,15 @@
     font-size: 14px;
     
   }
-  input:after {
+  .login-form input:after {
     position: absolute;
     content: "a***";
   }
   
-  a {
+  .login-form a {
     color: #71df88;
     position: relative;
   }
-  a:hover {
+  .login-form a:hover {
     color: #ff3f70;
   }  

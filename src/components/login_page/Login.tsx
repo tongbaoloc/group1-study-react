@@ -30,7 +30,7 @@ export default function Login() {
        }
     }
   return (
-    <div className="form my-28">
+    <div className="login-form form my-28">
       <div className="form__box">
         <div className="form__left">
           <div className="form__padding">
