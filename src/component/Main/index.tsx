@@ -1,6 +1,5 @@
 import React from "react";
 
-import './index.css'
 type Props = {
   children?: React.ReactNode;
 };
@@ -8,7 +7,7 @@ type Props = {
 const Main: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div className="app-content">{children}</div>
+      <div className="flex flex-col justify-center content-center bg-blue-200 w-screen h-screen m-auto">{children}</div>
     </>
   );
 };

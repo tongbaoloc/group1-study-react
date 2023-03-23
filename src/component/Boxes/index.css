@@ -1,9 +1,0 @@
-.app-boxes{
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .app-boxes > .box:last-child{
-    margin-right: 0px;
-  }
-  
