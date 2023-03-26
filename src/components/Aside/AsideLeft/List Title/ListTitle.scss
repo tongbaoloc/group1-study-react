@@ -1,0 +1,16 @@
+.list-title {
+  border: 2px solid;
+  padding: 20px;
+
+  ul {
+    li {
+      h2 {
+        @apply font-bold text-xl pb-[2px];
+      }
+    }
+
+    li:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+}

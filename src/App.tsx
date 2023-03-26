@@ -1,8 +1,8 @@
-import './App.scss'
-import Aside from './component/Aside/Aside'
-import Boxes from './component/Boxes/Boxes'
-import Footer from './component/Footer/Footer'
-import Header from './component/Header/Header'
+import './App.scss';
+import Aside from './components/Aside/Aside';
+import Boxes from './components/Boxes/Boxes';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
 
