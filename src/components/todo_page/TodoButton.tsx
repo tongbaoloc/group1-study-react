@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { TodoModel, todoState } from "../../store/RecoildStore";
-
-export default function TodoButton() {
+type Props = {
+  handleAdd: (e:TodoModel) => void;
+}
+export default function TodoButton(props:Props) {
   const [content, setContent] = useState("");
   const [isAdd, setIsAdd] = useState(false);
   const [list, setList] = useRecoilState(todoState);
@@ -13,6 +15,8 @@ export default function TodoButton() {
       content,
       status:true
     };
+    
+    props.handleAdd(todo);
     var temp= [...list, todo] ;
     setList(temp);
   }
