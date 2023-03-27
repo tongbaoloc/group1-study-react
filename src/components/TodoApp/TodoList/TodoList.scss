@@ -1,1 +1,5 @@
-.todolist {}
+.todolist {
+  .todo:not(:last-child) {
+    @apply mb-4;
+  }
+}

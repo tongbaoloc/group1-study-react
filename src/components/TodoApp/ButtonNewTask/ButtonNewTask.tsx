@@ -1,4 +1,5 @@
-import './ButtonNewTask.scss'
+import './ButtonNewTask.scss';
+import { FiPlus } from "react-icons/fi";
 
 export default function ButtonNewTask(
   { name }:
@@ -6,7 +7,8 @@ export default function ButtonNewTask(
 ) {
   return (
     <div className="buttonnewtask">
-      <button className="py-3 px-6 bg-red border-2 border-solid border-black rounded-3xl font-bold text-white relative top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <button>
+        <FiPlus />
         {name}
       </button>
     </div>

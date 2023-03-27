@@ -1,1 +1,15 @@
-.buttonnewtask {}
+.buttonnewtask {
+  button {
+    @apply py-3 px-6 bg-red-darker border-2 border-solid border-black font-bold text-white relative top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-between items-center gap-x-2;
+
+    &::before {
+      @apply content-[''] absolute bg-red w-full h-full top-0 left-0 -z-[1] origin-top-right scale-x-0 transition-transform duration-[600ms];
+    }
+
+    &:hover {
+      &::before {
+        @apply origin-top-left scale-x-100;
+      }
+    }
+  }
+}
