@@ -5,7 +5,7 @@ import { Header } from "./components/Header";
 import { Todos } from "./components/Todos";
 import { useState } from "react";
 import { TaskType } from "./types/TaskType";
-import { Modal } from "./components/Modal";
+import { Input } from "./components/Input";
 
 function App() {
   const [data, setData] = useState<Array<TaskType>>([
@@ -44,7 +44,7 @@ function App() {
       <Todos isOpen={isOpen} data={data} actionDelete={handleDeleteTask} />
       {isOpen ? (
         <>
-          <Modal actionSubmit={handleSubmit} />
+          <Input actionSubmit={handleSubmit} />
           <Button name="Cancel" actionOpenModal={openModal} />
         </>
       ) : (

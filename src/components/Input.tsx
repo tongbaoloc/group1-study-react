@@ -4,7 +4,7 @@ type props = {
   actionSubmit: (nameTask: string) => void;
 };
 
-export const Modal = (props: props) => {
+export const Input = (props: props) => {
   const [nameTask, setNameTask] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
