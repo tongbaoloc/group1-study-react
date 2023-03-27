@@ -2,12 +2,12 @@ import { TaskType } from "../types/TaskType";
 
 type props = {
   name: string,
-  actionOpenModal: () => void;
+  actionHandleInput: () => void;
 };
 
 export const Button = (props: props) => {
   return (
-    <button className="button-add-task mt-5" onClick={props.actionOpenModal}>
+    <button className="button-add-task mt-5" onClick={props.actionHandleInput}>
       {props.name}
     </button>
   );

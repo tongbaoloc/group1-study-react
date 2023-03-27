@@ -25,7 +25,7 @@ function App() {
     setData(data.filter((item) => item.id !== id));
   };
 
-  const openModal = () => {
+  const handleInput = () => {
     setIsOpen(!isOpen);
   };
 
@@ -45,10 +45,10 @@ function App() {
       {isOpen ? (
         <>
           <Input actionSubmit={handleSubmit} />
-          <Button name="Cancel" actionOpenModal={openModal} />
+          <Button name="Cancel" actionHandleInput={handleInput} />
         </>
       ) : (
-        <Button name="New Task" actionOpenModal={openModal} />
+        <Button name="New Task" actionHandleInput={handleInput} />
       )}
     </>
   );
