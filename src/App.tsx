@@ -42,9 +42,11 @@ function App() {
     <>
       <Header />
       <Todos isOpen={isOpen} data={data} actionDelete={handleDeleteTask} />
-      {isOpen && <Modal actionSubmit={handleSubmit} />}
       {isOpen ? (
-        <Button name="Cancel" actionOpenModal={openModal} />
+        <>
+          <Modal actionSubmit={handleSubmit} />
+          <Button name="Cancel" actionOpenModal={openModal} />
+        </>
       ) : (
         <Button name="New Task" actionOpenModal={openModal} />
       )}
