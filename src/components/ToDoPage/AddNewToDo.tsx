@@ -56,7 +56,7 @@ export const AddNewToDo = (props: Props) => {
           <div className="w-10/12 px-2 py-1">
             <input
               type="text"
-              className="w-full rounded-3xl h-10 text-black"
+              className="w-full rounded-3xl h-10 text-black px-5"
               onChange={(e) => setToDoName(e.target.value)}
             />
           </div>
@@ -78,7 +78,7 @@ export const AddNewToDo = (props: Props) => {
         </div>
       ) : (
         <div
-          className="w-1/4 flex justify-center items-center p-2 bg-purple-500 text-white text-base font-bold tracking-widest rounded-3xl cursor-pointer ease-in duration-300 hover:scale-110"
+          className="w-1/4 flex justify-center items-center p-2 px-2 bg-purple-500 text-white text-base font-bold tracking-widest rounded-3xl cursor-pointer ease-in duration-300 hover:scale-110"
           onClick={handleClickAddToDo}
         >
           Add new To Do
