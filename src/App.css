@@ -4,10 +4,7 @@
   justify-content: center;
   width: 400px;
   background-color: hotpink;
-}
-
-.title {
-  color: antiquewhite;
+  border-radius: 10px;
 }
 
 .icon {
@@ -36,19 +33,18 @@
   font-size: medium;
   font-weight: bold;
   color: antiquewhite;
+  transition: 0.2s all ease;
+  border-radius: 10px;
 }
 
 .button-add-task:hover{
   background-color: pink;
   color: hotpink;
+  transition: 0.2s all ease;
 }
 
 
 .text-disable{
   text-decoration: line-through;
   color: gray;
-}
-
-.modal{
-  width: 400px;
 }

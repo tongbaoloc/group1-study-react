@@ -3,8 +3,8 @@ type props = {};
 export const IconTrash = (props: props) => {
   return (
     <svg
-    height="30"
-    width="30"
+    height="20"
+    width="20"
       fill="none"
       stroke="currentColor"
       strokeWidth={1.5}

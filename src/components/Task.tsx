@@ -19,8 +19,8 @@ export const Task = (props: props) => {
   }
 
   return (
-    <div className="task mt-5 mb-5">
-      <input type="checkbox" onChange={handleChange}></input>
+    <div className="task mt-5">
+      <input className="flex justify-items-center mt-1.5 ml-5 w-5 h-5" type="checkbox" onChange={handleChange}></input>
       {isChoose ? (
         <h3 className="text-xl font-bold line-through text-gray-500">{props.data.name}</h3>
       ) : (
