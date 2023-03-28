@@ -8,8 +8,8 @@
        "url":"/todo"
     },
     {
-        "title":"About us",
-        "url":"/"
+        "title":"TodoAPI",
+        "url":"/todoAPI"
      },
      {
          "title":" Gallery",

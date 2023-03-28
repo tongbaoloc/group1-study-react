@@ -10,6 +10,7 @@ import { wineState } from "./store/RecoildStore";
 import Login from "./components/login_page/Login";
 import { Route, Routes } from "react-router-dom";
 import TodoList from "./components/todo_page/TodoList";
+import TodoListAPI from "./components/todo_page_api/TodoListAPI";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<Main data={data} />} />
         <Route path="/login" element={<Login />} />
         <Route path="/todo" element={<TodoList />} />
+        <Route path="/todoAPI" element={<TodoListAPI />} />
       </Routes>
       <Footer />
     </div>

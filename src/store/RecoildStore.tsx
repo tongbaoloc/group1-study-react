@@ -1,3 +1,4 @@
+import axios from "axios";
 import { atom, selector } from "recoil";
 
 export interface Wine {
@@ -31,5 +32,11 @@ export const isAuthState = atom({
 export const userState = atom({
   key: "userState",
   default: {} as User,
+});
+export const api = axios.create({
+  baseURL: "https://64230b94001cb9fc2036b94c.mockapi.io/todo/",
+  headers: {
+    "Content-type": "application/json"
+  }
 });
 
