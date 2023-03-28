@@ -1,32 +1,30 @@
+import { ToDo } from "../../interfaces/TodoInterface";
 import { TodoItem } from "./ToDoItem";
-
-type ToDo = {
-  id: string;
-  name: string;
-  isFinish: boolean;
-};
 
 type Props = {
   toDoList: ToDo[];
-  setToDoList: React.Dispatch<ToDo[]>;
+  isReloadData: boolean;
+  setIsReloadData: React.Dispatch<boolean>;
 };
 
 export const TodoContent = (props: Props) => {
   const toDoList = props.toDoList;
-
-  const setToDoList = props.setToDoList;
+  const isReloadData = props.isReloadData;
+  const setIsReloadData = props.setIsReloadData;
 
   return (
-    <div className="mt-10 bg-slate-300 p-20 m-5 rounded-3xl">
-      {toDoList.map((toDoItem) => {
-        return (
-          <TodoItem
-            toDo={toDoItem}
-            toDoList={toDoList}
-            setToDoList={setToDoList}
-          />
-        );
-      })}
+    <div className="p-20 mt-32 bg-slate-300 m-5 rounded-3xl">
+      <div className="h-96 overflow-x-auto">
+        {toDoList.map((toDoItem) => {
+          return (
+            <TodoItem
+              toDo={toDoItem}
+              isReloadData={isReloadData}
+              setIsReloadData={setIsReloadData}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

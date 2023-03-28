@@ -11,7 +11,7 @@ export const ToDoHeader = (props: Props) => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full p-8 bg-purple-500 text-white">
+    <div className="flex justify-center items-center w-full p-8 bg-purple-500 text-white fixed top-0 z-10">
       <div className="fixed top-7 left-10 cursor-pointer" onClick={handleClickMenu}>
         <MenuIcon fontSize="large" />
       </div>

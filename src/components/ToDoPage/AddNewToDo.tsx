@@ -1,17 +1,12 @@
-import { useState } from "react";
-
 import CheckIcon from "@mui/icons-material/Check";
 import ClearIcon from "@mui/icons-material/Clear";
+import { useState } from "react";
 
-type ToDo = {
-  id: string;
-  name: string;
-  isFinish: boolean;
-};
+import { createToDo } from "../../services/todos.service";
 
 type Props = {
-  toDoList: ToDo[];
-  setToDoList: React.Dispatch<ToDo[]>;
+  isReloadData: boolean;
+  setIsReloadData: React.Dispatch<boolean>;
 };
 
 export const AddNewToDo = (props: Props) => {
@@ -26,24 +21,27 @@ export const AddNewToDo = (props: Props) => {
     setIsShowInput(false);
   };
 
-  const handleAddNewToDo = () => {
+  const handleAddNewToDo = async () => {
     if (!toDoName) {
       alert("Your To Do name is empty!");
       return;
     }
 
-    const toDoList = props.toDoList;
-    const setToDoList = props.setToDoList;
-
-    const timeNow = new Date().toISOString();
+    const isReloadData = props.isReloadData;
+    const setIsReloadData = props.setIsReloadData;
 
     const newToDo = {
-      id: "todo" + timeNow,
       name: toDoName,
       isFinish: false,
     };
 
-    setToDoList([...toDoList, newToDo]);
+    try {
+      await createToDo(newToDo);
+
+      setIsReloadData(!isReloadData);
+    } catch (err: any) {
+      console.log("ERROR: Something went wrong when create new to do!");
+    }
 
     setToDoName("");
     setIsShowInput(false);
