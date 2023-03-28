@@ -1,0 +1,19 @@
+.todo {
+  @apply flex flex-row justify-between p-4 hover:bg-gray-50;
+}
+
+.todo:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.3s;
+}
+
+.todo:hover .checkBtn {
+  visibility: visible;
+}
+
+.checkBtn {
+  visibility: hidden;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 6px 8px;
+}

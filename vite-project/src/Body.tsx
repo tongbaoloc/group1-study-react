@@ -4,9 +4,8 @@ import { Side_Bar } from "./Body/Side_Bar";
 export function Body() {
   return (
     <>
-      <div className="flex flex-row h-screen w-full">
+      <div className="flex flex-row justify-center h-screen w-full">
         <Main_Content />
-        <Side_Bar />
       </div>
     </>
   )
