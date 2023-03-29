@@ -8,7 +8,7 @@ type props = {
 }
 
 export const Task = (props: props) => {
-  const [isChoose, setIsChoose] = useState(false);
+  const [isChoose, setIsChoose] = useState(props.data.status);
 
   const handleChange = () => {
     setIsChoose(!isChoose);
@@ -20,7 +20,7 @@ export const Task = (props: props) => {
 
   return (
     <div className="task mt-5">
-      <input className="flex justify-items-center mt-1.5 ml-5 w-5 h-5" type="checkbox" onChange={handleChange}></input>
+      <input className="flex justify-items-center mt-1.5 ml-5 w-5 h-5" type="checkbox" checked={isChoose} onChange={handleChange}></input>
       {isChoose ? (
         <h3 className="text-xl font-bold line-through text-gray-500">{props.data.name}</h3>
       ) : (

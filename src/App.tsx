@@ -35,6 +35,7 @@ function App() {
     const newTask: TaskType = {
       id: uuidv4(),
       name: nameTask,
+      status: false
     };
     setData([...data, newTask]);
     setIsOpen(false);
