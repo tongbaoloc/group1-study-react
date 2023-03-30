@@ -7,7 +7,7 @@ type Props = {
 const Main: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div className="flex flex-col justify-center content-center bg-blue-200 w-screen h-screen m-auto">{children}</div>
+      <div className="flex flex-col justify-center content-center bg-blue-200 m-auto min-h-screen">{children}</div>
     </>
   );
 };
