@@ -1,4 +1,4 @@
 export const ApiRoute = {
-    Todo: "todos",
-    TodoWithId:"todos/:id"
-}
+  Todo: "todos",
+  TodoWithId: "todos/:id",
+};

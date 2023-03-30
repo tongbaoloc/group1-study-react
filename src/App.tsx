@@ -1,7 +1,7 @@
 import Header from "./component/Header";
 import Main from "./component/Main";
 import TodoList from "./component/TodoLists/TodoLists";
-
+import { Toaster } from 'react-hot-toast';
 function App() {
   
   return (
@@ -10,6 +10,7 @@ function App() {
         <Header/>
         <TodoList/>
       </Main>      
+      <Toaster/>
     </div>
   );
 }
