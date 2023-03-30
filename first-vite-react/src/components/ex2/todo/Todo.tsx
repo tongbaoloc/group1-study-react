@@ -1,6 +1,7 @@
 import AddIcon from "@mui/icons-material/Add";
 import { Box, Button, FormGroup, Modal, TextField } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { addTodo, getTodos } from "../../../services/todos.service";
 import TodoItem from "./TodoItem";
 
 const buttonStyle = {
@@ -27,8 +28,20 @@ function Todo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleClick = (event: React.SyntheticEvent<Element, Event>) => {
-    let newItems = [...todoTexts, todoText];
-    setTodoTexts(newItems);
+    // let newItems = [...todoTexts, todoText];
+    // setTodoTexts(newItems);
+
+    // axios
+    //   .post("https://64234439001cb9fc203c1047.mockapi.io/api/v1/todos", {
+    //     todoText,
+    //   })
+    //   .then((res) => console.log(res.data));
+
+    addTodo({ todoText }).then((res) => {
+      let newItems = [...todoTexts, res.data.todoText];
+      setTodoTexts(newItems);
+    });
+
     setIsModalOpen(false);
     setTodoText("");
   };
@@ -38,6 +51,10 @@ function Todo() {
     newItems.splice(index, 1);
     setTodoTexts(newItems);
   };
+
+  useEffect(() => {
+    getTodos().then((res) => setTodoTexts(res.data.map((d) => d.todoText)));
+  }, []);
 
   return (
     <>
