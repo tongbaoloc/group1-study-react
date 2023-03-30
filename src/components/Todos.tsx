@@ -1,3 +1,4 @@
+import { Spinner } from "../Icons/Spinner";
 import { TaskType } from "../types/TaskType";
 import { Task } from "./Task";
 
@@ -12,9 +13,10 @@ export const Todos = (props: props) => {
   return (
     <div className="todos">
       {props.data.length === 0 && !props.isOpen && (
-        <p className="flex text-xl font-bold text-gray-400 justify-center mt-5">
-          No tasks
-        </p>
+        <div role="status" className="flex justify-center">
+          <Spinner />
+        <span className="sr-only">Loading...</span>
+    </div>
       )}
       {props.data.map((task) => (
         <Task
